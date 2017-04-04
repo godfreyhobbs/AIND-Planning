@@ -130,14 +130,10 @@ class AirCargoProblem(Problem):
         :return: list of Action objects
         """
         possible_actions = []
-        fs = decode_state(state, self.state_map)
+        fs_set = set(decode_state(state, self.state_map).pos)
         for action in self.get_actions():
             # pre conditions
-            possible = True
-            for pre_cond in action.precond_pos:
-                if pre_cond not in fs.pos:
-                    possible = False
-            if possible:
+            if set(action.precond_pos).issubset(set(fs_set)):
                 possible_actions.append(action)
 
         return possible_actions
