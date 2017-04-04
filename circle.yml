@@ -1,9 +1,9 @@
 test:
   override:
-    - python3.6 ./agent_test.py
+    - python3.6 -m unittest tests.test_my_air_cargo_problems:
 
   post:
-    - python3.6 ./tournament.py:
+    - python3.6 ./run_search.py -p 1,2,3 -s 1,2,3:
         timeout: 9000
 
 machine:
