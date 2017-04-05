@@ -1,9 +1,10 @@
 test:
   override:
     - python3.6 -m unittest tests.test_my_air_cargo_problems:
+    - python3.6 -m unittest tests.test_my_planning_graph:
 
   post:
-    - python3.6 ./run_search.py -p 3  -s 1 2 3 4 5 6 7 8 9 10:
+    - python3.6 ./run_search.py -p 3  -s 9 10:
         timeout: 9000
 
 machine:
