@@ -1,0 +1,10 @@
+breadth_first_search,    43     ,     56    ,     180,6  ,0.1777755770017393
+breadth_first_tree_search,  1458   ,     1459  ,      5960,6,6.134277451004891
+depth_first_graph_search,    21 ,         22 ,         84,20,0.08601143800478894
+depth_limited_search,   101   ,      271     ,    414,50,0.4513048190055997
+uniform_cost_search,    55    ,      57    ,     224,6,0.22846140099863987
+recursive_best_first_search with h_1,   4229   ,     4230   ,    17023,6,17.16304421300447
+greedy_best_first_graph_search with h_1,   6    ,       8   ,        24,6,0.02771319200110156
+astar_search with h_1,    55    ,      57  ,       224,6,0.22716436900373083
+astar_search with h_ignore_preconditions,   , 38       ,   40     ,    158,6,0.162485052998818
+astar_search with h_pg_levelsum,    29     ,     31     ,    118,6,4.308117125001445

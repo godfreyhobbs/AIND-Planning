@@ -4,7 +4,7 @@ test:
     - python3.6 -m unittest tests.test_my_planning_graph:
 
   post:
-    - python3.6 ./run_search.py -p 2  -s 7 8:
+    - python3.6 ./run_search.py -p 2  -s 5 6 9 10:
         timeout: 9000
 
 machine:
